@@ -359,7 +359,7 @@ a {
     
     background: #fff;
     padding: 10px;
-    margin: auto 8px;
+    margin: auto;
     /* max-width: 80%; */
     /* max-height: 80%; */
     overflow: auto;
