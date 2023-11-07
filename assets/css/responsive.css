@@ -119,7 +119,7 @@
 
 /* On tablet and PC */
 @media (min-width: 740px) {
-    .certification-item {
+    /* .certification-item {
         display: list-item;
-    }
+    } */
 }

@@ -323,6 +323,7 @@ a {
     color: var(--text-color);
     margin-bottom: 4px;
     display: flex;
+    align-items: center;
 }
 
 .certification-icon {
