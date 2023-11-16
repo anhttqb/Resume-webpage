@@ -44,8 +44,30 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 #sideNav {
-    
+    animation: slideFromLeft 0.5s linear;
 }
 
 .navbar {
@@ -142,7 +164,7 @@ a {
 #resumeContent {
     
 }
-
+/* These code can be applied to all section */
 .resume-section {
     padding-left: 12px;
     min-height: 100vh;
@@ -217,6 +239,15 @@ a {
     border-top: 1px solid var(--text-color);
     opacity: 25%;
 }
+
+.slide-right {
+    animation: slideFromRight 0.5s linear;
+}
+
+/* About section */
+/* #about {
+    animation: slideFromRight 0.3s linear;
+} */
 
 /* Experience section */
 #experience,

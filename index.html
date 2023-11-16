@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Homepage</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/img/icons8-a-32.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Font Awesome -->
@@ -446,14 +448,18 @@
 
             // add active class when scrolling to the corresponding section
             function handleIntersection(entries) {
+                console.log(entries);
                 entries.forEach(entry => {
                     // get the id of the current section
+                    
                     const id = entry.target.id;
                     // get the nav link of the current section
                     const navLink = document.querySelector(`.navbar__item-link[href="#${id}"]`);
 
 
                     if (entry.isIntersecting) {
+                        entry.target.classList.add('slide-right');
+                        // console.log(entry.target.classList);
                         // remove active class from all links and then add it to this current section link
                         navLinks.forEach(link => link.classList.remove('navbar__item-link--active'));
                         navLink.classList.add("navbar__item-link--active");
