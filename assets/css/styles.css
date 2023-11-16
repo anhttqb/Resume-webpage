@@ -170,6 +170,7 @@ a {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    opacity: 0;
 }
 
 .resume-section:first-child {
@@ -242,6 +243,7 @@ a {
 
 .slide-right {
     animation: slideFromRight 0.5s linear;
+    opacity: 1;
 }
 
 /* About section */
